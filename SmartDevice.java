@@ -15,6 +15,7 @@ public class SmartDevice {
 
     //Constructores
         public SmartDevice(){} //sin parámetro
+        //con todos los parámetros
         public SmartDevice(int id, String model, String brand, String operatingSystem, boolean internetConnectivity, double screenSize, Integer batteryLife, boolean batteryInalambricCharge, boolean camera, boolean gps) {
         this.id = id;
         this.model = model;
@@ -27,12 +28,12 @@ public class SmartDevice {
         this.camera = camera;
         this.gps = gps;
     }
-        //con todos los parámetros
-         public SmartDevice(String model, String brand, String operatingSystem) {
+        //parámetros generales
+        public SmartDevice(String model, String brand, String operatingSystem) {
         this.model = model;
         this.brand = brand;
         this.operatingSystem = operatingSystem;
-    } //parámetros generales
+    }
 
     //métodos
     public void descargaBateria(int descarga) {
